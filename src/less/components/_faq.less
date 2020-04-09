@@ -1,0 +1,45 @@
+// Export to "index.less"
+// FAQ
+.section-faq {
+    background: #e7526b;
+}
+
+.faq__container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 78px 25px 225px 25px;
+
+    color: #fff;
+}
+
+.faq__title {
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.faq__text {
+    font-family: "Open Sans";
+    font-weight: 100;
+    line-height: 1.6;
+
+    width: 430px;
+}
+
+.faq__mail {
+    text-decoration: none;
+    color: #fff;
+
+    position: relative;
+    &::after {
+        display: block;
+        content: "";
+        width: 100%;
+        background: #fff;
+        height: 2px;
+        position: absolute;
+        bottom: -2px;
+    }
+}

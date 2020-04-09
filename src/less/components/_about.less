@@ -1,0 +1,55 @@
+// Export to "index.less"
+// Section "about"
+
+//************* Variable "about" ****************//
+@bg-about: #2e3b4e;
+//******************************************************//
+
+.section-about {
+    position: relative;
+    padding: 78px 0 140px;
+    background: @bg-about;
+}
+
+.about__inner {
+    display: flex;
+    justify-content: center;
+}
+
+.about__column {
+    width: 420px;
+    margin: 0 20px;
+}
+
+.item-about {
+    color: #fff;
+    &--top {
+        padding-bottom: 50px;
+    }
+}
+
+.item-about__title {
+    margin-bottom: 30px;
+
+    font-family: "Open Sans Bold", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.item-about__text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: #e5e6e9;
+    line-height: 1.6;
+}
+
+.about__img {
+    img {
+        position: absolute;
+        right: 0;
+        bottom: -35px;
+        left: 0;
+        margin: 0 auto;
+    }
+}
