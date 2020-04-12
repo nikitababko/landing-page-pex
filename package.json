@@ -7,7 +7,9 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "dependencies": {},
+    "dependencies": {
+        "gh-pages": "^2.2.0"
+    },
     "devDependencies": {
         "browser-sync": "^2.26.7",
         "del": "^5.1.0",
@@ -22,7 +24,9 @@
         "gulp-terser": "^1.2.0"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "deploy": "gh-pages -d build"
     },
-    "license": "ISC"
+    "license": "ISC",
+    "homepage": "https://whiterabbit1966.github.io/landing-page___pex___-LIGHT-"
 }
