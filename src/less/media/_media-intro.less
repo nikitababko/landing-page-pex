@@ -1,19 +1,105 @@
-@media (max-width: 690px) {
+@media (max-width: 1024px) and (orientation: landscape) {
     .intro__inner {
-        width: 450px;
+        padding-top: 250px;
     }
 
-    .intro__title {
-        font-size: 40px;
+    .intro__modal {
+        @keyframes drop {
+            0% {
+                font-size: 10px;
+                width: 50px;
+            }
+            70% {
+                transform: translateY(200px);
+                transform: rotateY(260deg);
+            }
+            100% {
+                transform: translateY(-240px);
+            }
+        }
     }
 }
 
-@media (max-width: 585px) {
+@media (max-width: 768px) and (orientation: landscape) {
+    .intro {
+        height: 150vh;
+    }
     .intro__inner {
-        width: 400px;
+        padding-top: 150px;
     }
 
+    .intro__modal {
+        @keyframes drop {
+            0% {
+                font-size: 10px;
+                width: 50px;
+            }
+            70% {
+                transform: translateY(200px);
+                transform: rotateY(260deg);
+            }
+            100% {
+                transform: translateY(-300px);
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 480px) {
+    .intro__inner {
+        padding-top: 300px;
+        text-align: left;
+
+        width: 350px;
+    }
     .intro__title {
         font-size: 35px;
+    }
+
+    .intro__modal {
+        width: 350px;
+
+        font-size: 40px;
+        @keyframes drop {
+            0% {
+                font-size: 10px;
+                width: 50px;
+            }
+            70% {
+                transform: translateY(200px);
+                transform: rotateY(260deg);
+            }
+            100% {
+                transform: translateY(-250px);
+            }
+        }
+    }
+}
+
+@media (max-width: 380px)  {
+    .intro__inner {
+        padding-top: 200px;
+
+        width: 300px;
+    }
+
+    .intro__modal {
+        width: 280px;
+    }
+}
+
+@media (max-height: 380px) and (orientation: landscape) {
+    .intro__inner {
+        margin-left: -60px;
+        padding-top: 150px;
+
+        // width: 300px;
+    }
+
+    .intro__modal {
+        width: 280px;
     }
 }

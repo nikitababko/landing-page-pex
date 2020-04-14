@@ -4,6 +4,24 @@ Reset styles
 @import "./reset.less";
 
 /*=================================================
+Fonts
+=================================================*/
+@import "./fonts/_fonts.less";
+
+/*=================================================
+Global styles
+=================================================*/
+* {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+/*=================================================
 Components
 =================================================*/
 @import "./components/_header.less";
@@ -28,12 +46,10 @@ Media
 @import "./media/_media-how-it-works.less";
 @import "./media/_media-services.less";
 @import "./media/_media-left-hand.less";
+@import "./media/_media-faq.less";
 @import "./media/_media-footer.less";
 
-/*=================================================
-Fonts
-=================================================*/
-@import "./fonts/_fonts.less";
+
 
 /*======================================================= 
 Import fontawesome config
@@ -54,12 +70,3 @@ Import fontawesome config
 @import "./fonts/fontawesome/brands.less";
 @import "./fonts/fontawesome/solid.less";
 
-/*=================================================
-Global styles
-=================================================*/
-.container {
-    width: 100%;
-    max-width: 1250px;
-    margin: 0 auto;
-    padding: 0 25px;
-}

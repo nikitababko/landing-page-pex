@@ -1,5 +1,5 @@
 // Media style
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .header {
         padding: 20px 0;
     }
@@ -44,13 +44,23 @@
     ========================================================*/
     .header__nav--active {
         position: absolute;
-        top: 50px;
+        top: 48px;
         left: 0;
 
         display: block;
 
         transform: translateX(0%);
     }
+
+        /*============================================
+        Header fixed
+        ============================================*/
+        .header--fixed {
+            .header__toggle-button {   
+                top: 5px;                
+            }
+        }
+        //============================================
 
     .nav__search {
         margin: 25px 0 0 20px;
@@ -63,5 +73,33 @@
 
     .header__toggle-button {
         display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__toggle-button {   
+        top: 3px;
+        right: 40px;           
+    }
+}
+
+@media (max-width: 360px) {
+    .header--fixed {
+        .header__toggle-button {   
+            top: 12px;                
+        }
+    }
+
+
+    .header__inner {
+        flex-direction: column;
+    }
+    .header__logo {
+        margin: 0 auto;
+    }
+
+    .header__toggle-button {   
+        top: 12px;
+        right: 20px;           
     }
 }
