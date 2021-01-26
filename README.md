@@ -2,9 +2,10 @@
 
 ## &#x1F4D8; About project
 
+### [You can check out the demo.](https://nikitababko.github.io/landing-page-pex/)
+
 ### Where and what is located (files, folders).
 
--   File "pex.psd" - Layout of the site from which I wrote the code
 -   Folder "src" - project's source
 -   Folder "build" - ready project
 -   File "gulpfile.js" - main config
